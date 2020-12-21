@@ -64,6 +64,7 @@ public class SocketClient {
                 fileOutputStream.close();
                 socket.close();
                 System.out.println("Close");
+                System.exit(-1);
             }
         }
     }
