@@ -56,6 +56,7 @@ public class SocketClient {
                 System.out.println("Finish");
             } catch (UnknownTypeException u){
                 throw new Exception();
+                return -1;
             }
             finally{
                 fileInputStream.close();
