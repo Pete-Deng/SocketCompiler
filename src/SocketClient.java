@@ -45,7 +45,7 @@ public class SocketClient {
                     if(test==-1){
                         break;
                     }
-                    if(test==0x7F){
+                    if(test==0xFF){
                         System.out.println("DELETE:"+test);
                         throw new UnknownTypeException(null, null);
                     }else{
