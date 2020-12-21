@@ -14,8 +14,8 @@ public class SocketClient {
         File input = new File(args[1]);
         File output=new File(args[2]);
         //DataOutputStream dos = new DataOutputStream(new FileOutputStream(args[2]));
-        String client="127.0.0.1";
-        int port = 8999;
+        String client="121.196.149.101";
+        int port = 443;
         if(args[0].equals("--generate")){
             System.out.println(client);
             Socket socket = new Socket(client, port);
