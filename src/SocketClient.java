@@ -45,8 +45,8 @@ public class SocketClient {
                     if(test==-1){
                         break;
                     }
-                    if(test==0x18){
-                        System.out.println("test:"+test);
+                    if(test==0x7F){
+                        System.out.println("DELETE:"+test);
                         throw new UnknownTypeException(null, null);
                     }else{
                         fileOutputStream.write(test);
