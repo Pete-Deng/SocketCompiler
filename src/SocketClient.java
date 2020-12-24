@@ -24,7 +24,7 @@ public class SocketClient {
             //System.out.println("new Socket");
             FileInputStream fileInputStream=new FileInputStream(input);
             DataOutputStream dataOutputStream=new DataOutputStream(socket.getOutputStream());
-            byte[] bytes=new byte[4096];
+            byte[] bytes=new byte[8192];
             int length=0;
             int n=0;
             while ((length=fileInputStream.read(bytes, 0, bytes.length))!=-1) {
